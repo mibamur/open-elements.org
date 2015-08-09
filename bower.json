@@ -22,7 +22,7 @@
     "neon-elements": "PolymerElements/neon-elements#^1.0.0",
     "platinum-elements": "PolymerElements/platinum-elements#^1.0.0",
     "google-web-components": "GoogleWebComponents/google-web-components#^1.0.0",
-    "molecules": "PolymerElements/molecules#^1.0.0",
+    "molecules": "marcus7777/molecules#master",
     "polymer": "Polymer/polymer#^1.0.0",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
