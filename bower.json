@@ -16,7 +16,7 @@
   ],
   "private": true,
   "dependencies": {
-    "molecules": "marcus7777/molecules",
+    "molecules": "marcus7777/molecules#master",
     "polymer": "Polymer/polymer#^1.0.0",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
