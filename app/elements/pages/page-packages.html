@@ -23,7 +23,7 @@
           <template is="dom-repeat" items="[[packages]]">
             <a href$="[[_packageLink(item.name)]]" is="app-link" class="package flex-none"><package-tile name$="[[item.name]]"></package-tile></a>
           </template>
-          <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">Are we missing a element?</a>
+          <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new"><paper-material>Are we missing a element?</paper-material></a>
         </div>
 
         <div id="guides-container">
@@ -32,7 +32,7 @@
             <template is="dom-repeat" items="[[guides]]">
               <a href$="[[_link('guides',item.name)]]" is="app-link"><guide-card guide="[[item.name]]"></guide-card></a>
             </template>
-            <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">Are we missing a guide?</a>
+            <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new"><paper-material>Are we missing a guide?</paper-material></a>
           </div>
         </div>
         
