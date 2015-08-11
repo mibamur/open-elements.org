@@ -17,7 +17,7 @@
   "private": true,
   "dependencies": {
     "iron-elements": "marcus7777/iron-elements#master",
-    "paper-elements": "PolymerElements/paper-elements#^1.0.0",
+    "paper-elements": "marcus7777/paper-elements-1#master",
     "gold-elements": "PolymerElements/gold-elements#^1.0.0",
     "neon-elements": "PolymerElements/neon-elements#^1.0.0",
     "platinum-elements": "PolymerElements/platinum-elements#^1.0.0",
