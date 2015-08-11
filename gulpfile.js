@@ -135,18 +135,18 @@ gulp.task('html', function () {
     .pipe($.if('*.html', $.replace('elements/elements.html', 'elements/elements.build.html')))
     .pipe(assets)
     // Concatenate And Minify JavaScript
-    .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
+//    .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
     // Concatenate And Minify Styles
     // In case you are still using useref build blocks
     .pipe($.if('*.css', $.cssmin()))
     .pipe(assets.restore())
     .pipe($.useref())
     // Minify Any HTML
-    .pipe($.if('*.html', $.minifyHtml({
-      quotes: true,
-      empty: true,
-      spare: true
-    })))
+//    .pipe($.if('*.html', $.minifyHtml({
+//      quotes: true,
+//      empty: true,
+//      spare: true
+//    })))
     // Output Files
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'html'}));
@@ -179,13 +179,13 @@ gulp.task('serve', ['styles', 'elements', 'catalog:dev'], function () {
   ]
   if (process.env.FIXTURES) mw.unshift(superstatic({config: {root: 'fixtures'}}));
 
-  browserSync({
-    notify: true,
-    server: {
-      baseDir: dirs,
-      middleware: mw
-    }
-  });
+//  browserSync({
+//    notify: true,
+//    server: {
+//      baseDir: dirs,
+//      middleware: mw
+//    }
+//  });
 
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.css'], ['styles', reload]);
