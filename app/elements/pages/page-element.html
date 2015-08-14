@@ -55,7 +55,9 @@
             <div class="nav" id="cart-add">
               <paper-item hidden$="[[!metadata]]" on-tap="toggleCart"><cart-item-icon id="cartIcon" element="[[element]]"></cart-item-icon></paper-item>
             </div>
-
+            <div class="nav" id="cart-add">
+              <a tabindex="0" role="button" href="[[_githubLink(metadata.source)]]" target="_blank" title="View Source on GitHub" aria-label="View Source on GitHub"><iron-icon icon="code"></iron-icon><span hidden$="[[iconsOnly]]">Source</span></a>
+            </div>
             <div class="bower-command-label">Bower Command</div>
             <input class="bower-command" title="Bower Command" readonly value="[[_bowerCommand(metadata.source)]]" on-tap="_selectAllBowerCommand">
 
@@ -198,6 +200,9 @@
     },
     _bowerCommand: function(source) {
       return 'bower install --save ' + source;
+    },
+    _githubLink: function(source) {
+      return 'https://github.com/' + source;
     },
     _selectAllBowerCommand: function(e) {
       e.currentTarget.select();
