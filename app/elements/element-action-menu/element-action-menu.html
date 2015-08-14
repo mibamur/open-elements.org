@@ -64,7 +64,7 @@ Polymer({
     e.stopPropagation();
     e.preventDefault();
     if (e.currentTarget.hasAttribute('disabled')) return false;
-    this.fire('nav', {url: '/elements/' + this.element + '?active=' + this._element.active + "&view=demo:" + this._element.demo.path});
+    this.fire('nav', {url: '/elements/' + this.element + '?active=' + this._element.active + "&ModPagespeed=off&view=demo:" + this._element.demo.path});
   }
 });
 </script>
