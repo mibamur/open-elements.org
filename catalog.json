@@ -55,6 +55,13 @@
       "color":"#7D26CD",
       "symbol":"Ut",
       "tagline": "Utilities are elements that add utility."
+    },
+    {
+      "name":"expand-elements",
+      "title":"ExpandJS",
+      "color":"#F15A29",
+      "symbol":"Xp",
+      "tagline": "ExpandJS is a modular library"
     }
   ]
 }
