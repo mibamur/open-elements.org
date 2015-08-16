@@ -2,14 +2,14 @@
   "packages": [
     {
       "name":"iron-elements",
-      "title":"Iron Elements",
+      "title":"Iron",
       "color":"#81c784",
       "symbol": "Fe",
       "tagline":"Polymer core elements"
     },
     {
       "name":"paper-elements",
-      "title":"Material design Elements",
+      "title":"Paper",
       "color":"#ffffff",
       "symbol": "Md",
       "tagline":"Material design elements"
@@ -24,20 +24,20 @@
     {
       "name":"gold-elements",
       "color":"#ffb74d",
-      "title":"Gold Elements",
+      "title":"Gold",
       "symbol": "Au",
       "tagline":"Ecommerce Elements"
     },
     {
       "name":"neon-elements",
-      "title":"Neon Elements",
+      "title":"Neon",
       "color":"#a7ffeb",
       "symbol":"Ne",
       "tagline": "Animation and Special Effects"
     },
     {
       "name":"platinum-elements",
-      "title":"Platinum Elements",
+      "title":"Platinum",
       "color":"#cfd8dc",
       "symbol":"Pt",
       "tagline":"Offline, push, and more"
