@@ -179,13 +179,13 @@ gulp.task('serve', ['styles', 'elements', 'catalog:dev'], function () {
   ]
   if (process.env.FIXTURES) mw.unshift(superstatic({config: {root: 'fixtures'}}));
 
-//  browserSync({
-//    notify: true,
-//    server: {
-//      baseDir: dirs,
-//      middleware: mw
-//    }
-//  });
+  browserSync({
+    notify: true,
+    server: {
+      baseDir: dirs,
+      middleware: mw
+    }
+  });
 
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.css'], ['styles', reload]);
