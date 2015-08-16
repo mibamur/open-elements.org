@@ -25,8 +25,6 @@
     "google-web-components": "GoogleWebComponents/google-web-components#master",
     "molecules": "marcus7777/molecules#master",
     "utilities": "marcus7777/utilities#master",
-    "steroid-elements": "bquarks/steroid-elements#^1.0.0",
-    "mercury-elements": "bquarks/mercury-elements#^1.0.0",
     "polymer": "Polymer/polymer#master",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
