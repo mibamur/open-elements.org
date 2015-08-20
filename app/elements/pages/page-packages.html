@@ -38,12 +38,16 @@
             <template is="dom-repeat" items="[[guides]]">
               <a href$="[[_link('guides',item.name)]]" is="app-link"><guide-card guide="[[item.name]]"></guide-card></a>
             </template>
-            
-            <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">
+                        <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">
               <paper-button>Are we missing a guide?</paper-button>
             </a>
+          </div>  
+          <div class="horizontal layout wrap"> 
             <a href="https://github.com/Granze/awesome-polymer">
               <paper-button>more Awessome Stuff</paper-button>
+            </a>
+            <a href="http://jsbin.com/pomine/edit?html,output">
+              <paper-button>starter jsBin</paper-button>
             </a>
           </div>
         </div>
