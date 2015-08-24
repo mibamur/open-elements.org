@@ -49,7 +49,7 @@
               <a is="app-link" class="item" href="[[_link(active,'docs')]]" active$="[[_isEqual(view,'docs')]]"><iron-icon icon="description"></iron-icon> <span>Docs</span></a>
               <template is="dom-repeat" items="[[docDemos]]">
                 <a is="app-link" class="item" href="[[_demoLink(active,item.path)]]" active$="[[_demoActive(item.path,view)]]"><iron-icon icon="visibility"></iron-icon> <span>[[_demoName(item.desc)]]</span></a>
-                <edit-in-jsbin url="[[_demoLink(item.is,item.path)]]"></edit-in-jsbin>
+                <edit-in-jsbin url="[[_demoUrl(item.is,item.path)]]"></edit-in-jsbin>
               </template>
               <a rel="external" class="item" href="[[_githubLink(metadata.source)]]" target="_blank" title="View Source on GitHub" aria-label="View Source on GitHub"><iron-icon icon="code"></iron-icon> <span>Source</span></a>
             </nav>
@@ -203,7 +203,7 @@
     _githubLink: function(source) {
       return 'https://github.com/' + source;
     },
-    _demoLink: function(is, url) {
+    _demoUrl: function(is, url) {
       return window.location.origin + "/bower_components/" + is + "/"  + url;
     },
     _selectAllBowerCommand: function(e) {
