@@ -7,7 +7,7 @@
       
       <form target="newbin" action="http://jsbin.com/" method="post">
         <input type="hidden" name="html" value="{{html}}" />
-        <input type="hidden" name="css" value="{{css}}" />
+        <!--    <input type="hidden" name="css" value="{{css}}" /> -->
         <input type="image" alt="Edit in JSbin" src="/images/jsbin.svg" />
       </form>
     </template>
@@ -30,8 +30,8 @@
         return got.replace('<head>','<head>'+ base);
       },
       getCss: function(got) {
-        style = got.match(/<style>(.*?)<\/style>/g)
-        return style.replace(['<style>','</style>'],'');
+  //      style = got.match(/<style>(.*?)<\/style>/g)
+  //      return style.replace(['<style>','</style>'],'');
       }
     });
   })();
