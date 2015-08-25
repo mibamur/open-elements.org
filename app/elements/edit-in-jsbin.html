@@ -6,7 +6,7 @@
         last-response="{{got}}"></iron-ajax>
       
       <form target="newbin" action="http://jsbin.com/" method="post">
-        <input type="hidden" name="html" value="{{go}}" />
+        <input type="hidden" name="html" value="{{html}}" />
         <input type="image" alt="Edit in JSbin" src="/images/jsbin.svg" />
       </form>
     </template>
@@ -16,14 +16,21 @@
     Polymer({
       is: 'edit-in-jsbin',
       properties: {
-        go:{ 
-            computed:"addBase(got,url)"
+        html:{ 
+            computed:"getHtml(got,url)"
+        },
+        css:{ 
+            computed:"getCss(got)"
         },
         url:String
       },
-      addBase: function(got,url) {
+      getHtml: function(got,url) {
         base = '<base href="' + url.match(/(.*)\//)[0] + '">';     
         return got.replace('<head>','<head>'+ base);
+      },
+      getCss: function(got) {
+        style = got.match(/<style>(.*?)<\/style>/g)
+        return style.replace(['<style>','</style>'],'');
       }
     });
   })();
