@@ -18,8 +18,8 @@
 <link rel="import" href="../cart-item-icon/cart-item-icon.html">
 
 <dom-module id="page-element">
-  <link rel="import" type="css" href="page-element.css">
   <template>
+    <link rel="import" type="css" href="page-element.css">
     <catalog-element name="[[element]]" data="{{metadata}}"></catalog-element>
     <catalog-package name="[[metadata.package]]" data="{{package}}"></catalog-package>
     <catalog-data elements="{{elements}}" behavior-map="{{behaviorMap}}"></catalog-data>
@@ -48,8 +48,10 @@
             <nav id="nav" class="nav" attr-for-selected="name" selected="{{view}}">
               <a is="app-link" class="item" href="[[_link(active,'docs')]]" active$="[[_isEqual(view,'docs')]]"><iron-icon icon="description"></iron-icon> <span>Docs</span></a>
               <template is="dom-repeat" items="[[docDemos]]">
-                <a is="app-link" class="item" href="[[_demoLink(active,item.path)]]" active$="[[_demoActive(item.path,view)]]"><iron-icon icon="visibility"></iron-icon> <span>[[_demoName(item.desc)]]</span></a>
-                <edit-in-jsbin url="[[_demoUrl(item.path)]]"></edit-in-jsbin>
+                <div class="layout horizontal">
+                  <a is="app-link" class="item" href="[[_demoLink(active,item.path)]]" active$="[[_demoActive(item.path,view)]]"><iron-icon icon="visibility"></iron-icon> <span>[[_demoName(item.desc)]]</span></a>
+                  <edit-in-jsbin url="[[_demoUrl(item.path)]]"></edit-in-jsbin>
+                </div>
               </template>
               <a rel="external" class="item" href="[[_githubLink(metadata.source)]]" target="_blank" title="View Source on GitHub" aria-label="View Source on GitHub"><iron-icon icon="code"></iron-icon> <span>Source</span></a>
             </nav>
