@@ -8,7 +8,7 @@
 		<polygon fill="#303F9F" points="84.157,143 42.878,214.5 84.157,286 125.436,214.5 		"/>
 		<polygon fill="#3F51B5" points="331.842,0 290.561,71.5 331.842,143 373.121,71.5 		"/>
 		<polygon fill="#7986CB" points="373.121,71.5 249.278,286 331.842,286 414.4,143 		"/>
-		<polygon fill="#FF4081" points="249.278,0 84.157,286 166.721,286 331.842,0 		"/>
+		<polygon points="249.278,0 84.157,286 166.721,286 331.842,0 		"/>
 		<polygon fill="#536DFE" points="84.157,0 1.596,143 42.878,214.5 166.721,0 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0.2" points="249.278,0 290.561,71.5 331.842,0 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0.1" points="208,71.5 249.278,0 290.561,71.5 		"/>
@@ -66,7 +66,7 @@
 </g>
 <g display="none">
 	<g display="inline">
-		<polygon fill="#FF4081" points="249.279,0 84.157,286 166.721,286 331.843,0 		"/>
+		<polygon points="249.279,0 84.157,286 166.721,286 331.843,0 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0.2" points="249.279,0 290.558,71.5 331.843,0 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0.1" points="208,71.5 249.279,0 290.558,71.5 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0" points="208,71.5 249.279,143 290.558,71.5 		"/>
@@ -77,7 +77,7 @@
 		<polygon fill-opacity="0.1" points="166.721,143 208,71.5 249.279,143 		"/>
 	</g>
 	<g display="inline">
-		<polygon fill="#FF4081" points="331.84,0 166.718,286 249.279,286 373.121,71.5 		"/>
+		<polygon points="331.84,0 166.718,286 249.279,286 373.121,71.5 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0.1" points="290.558,71.5 331.84,0 373.121,71.5 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0" points="290.558,71.5 331.84,143 373.121,71.5 		"/>
 		<polygon fill-opacity="0.2" points="249.279,143 290.558,214.5 331.84,143 		"/>
@@ -87,7 +87,7 @@
 		<polygon fill-opacity="0.1" points="249.279,143 290.558,71.5 331.84,143 		"/>
 	</g>
 	<g display="inline">
-		<polygon fill="#FF4081" points="166.718,0 42.878,214.5 84.16,286 249.279,0 		"/>
+		<polygon points="166.718,0 42.878,214.5 84.16,286 249.279,0 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0.2" points="166.718,0 208,71.5 249.279,0 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0.1" points="125.439,71.5 166.718,0 208,71.5 		"/>
 		<polygon fill="#FFFFFF" fill-opacity="0" points="125.439,71.5 166.718,143 208,71.5 		"/>
