@@ -29,8 +29,7 @@
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
     "color": "~2.5.0",
-    "hydrolysis": "PolymerLabs/hydrolysis#^1.11.0",
-    "expand-elements": "marcus7777/expand-elements"
+    "hydrolysis": "PolymerLabs/hydrolysis#^1.11.0"
   },
   "resolutions": {
     "iron-ajax": "^1.0.0",
