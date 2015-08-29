@@ -5,28 +5,28 @@
       "title":"Iron",
       "color":"#81c784",
       "symbol": "Fe",
-      "tagline":"Polymer core elements"
+      "tagline":"Polymer core"
     },
     {
       "name":"paper-elements",
       "title":"Paper",
       "color":"#ffffff",
       "symbol": "Md",
-      "tagline":"Material design elements"
+      "tagline":"Material design"
     },
     {
       "name":"google-web-components",
       "title":"Google Web Components",
       "color":"#64B5F6",
       "symbol":"Go",
-      "tagline":"Components for Google's APIs and services"
+      "tagline":"Google's APIs and services"
     },
     {
       "name":"gold-elements",
       "color":"#ffb74d",
       "title":"Gold",
       "symbol": "Au",
-      "tagline":"Ecommerce Elements"
+      "tagline":"Ecommerce"
     },
     {
       "name":"neon-elements",
@@ -54,14 +54,7 @@
       "title":"Utilities",
       "color":"#7D26CD",
       "symbol":"Ut",
-      "tagline": "Utilities are elements that add utility."
-    },
-    {
-      "name":"expand-elements",
-      "title":"ExpandJS",
-      "color":"#F15A29",
-      "symbol":"Xp",
-      "tagline": "ExpandJS is a modular library"
+      "tagline": "Utilities"
     }
   ]
 }
