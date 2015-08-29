@@ -155,12 +155,13 @@ iron-icon {
 }
 
 p a {
-    text-transform: none;
-    color: rgb(85,114,250);
+  color: #55FA5A;
+  font-weight: bold;
+  color: rgb(85,114,250);
 }
 
 li p {
-    margin: 0;
+  margin: 0;
 }
 
 aside {
