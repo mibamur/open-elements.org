@@ -21,16 +21,16 @@
       <div class="content fit">
         <div class="layout">
           <h3>a Unofficial Polymer^1 Catalog</h3>
-          <p>This is a fork of <a href="https://elements.polymer-project.org/"> the Polymer Teams Great One </a> and for all element people want to share. I need <a href="https://github.com/marcus7777/open-elements.org/issues" >help</a> Now with jsbin on some demos</p>
+          <p>This is a fork of <a href="https://elements.polymer-project.org/">The Polymer Teams Catalog</a> and for all element people want to share. I need <a href="https://github.com/marcus7777/open-elements.org/issues" >help</a> Now with jsbin on some demos</p>
         </div>
         <div class="packages layout horizontal wrap">
           <template is="dom-repeat" items="[[packages]]">
             <a href$="[[_packageLink(item.name)]]" is="app-link" class="package flex-none"><package-tile name$="[[item.name]]"></package-tile></a>
           </template>
         </div>
-        <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">
+        <p><a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">
           <paper-button> Need a element? </paper-button>
-        </a>
+        </a></p>
         <div id="guides-container">
           <h3>Element Guides</h3>
           <div id="guide-list" class="horizontal layout wrap">
@@ -38,9 +38,9 @@
               <a href$="[[_link('guides',item.name)]]" is="app-link"><guide-card guide="[[item.name]]"></guide-card></a>
             </template>
           </div>
-          <a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">
+          <p><a href="https://github.com/marcus7777/polymer-element-catalog/issues/new">
             <paper-button>Need a guide?</paper-button>
-          </a>
+          </a></p>
           <div class="horizontal layout wrap"> 
             <a href="https://github.com/Granze/awesome-polymer">
               <paper-button>more Awessome Stuff</paper-button>
