@@ -154,20 +154,6 @@ iron-icon {
   color: rgba(0,0,0,0.54);
 }
 
-p a {
-  color: #FFF;
-  font-weight: bold;
-  border-top: solid thin;
-  border-bottom: solid thin;
-  text-transform: uppercase;
-}
-p a:before {
-  content: "<";
-}
-p a:after {
-  content: ">";
-}
-
 li p {
   margin: 0;
 }
