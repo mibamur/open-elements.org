@@ -25,7 +25,7 @@
     "google-web-components": "GoogleWebComponents/google-web-components#master",
     "molecules": "marcus7777/molecules#master",
     "utilities": "marcus7777/utilities#master",
-    "development":"marcus7777/development",
+    "development":"marcus7777/development#master",
     "polymer": "Polymer/polymer#^1.1.0",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
