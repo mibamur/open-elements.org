@@ -6,55 +6,54 @@
       "color":"#81c784",
       "symbol": "Fe",
       "tagline":"Polymer core"
-    },
-    {
+    },{
       "name":"paper-elements",
       "title":"Paper",
       "color":"#ffffff",
       "symbol": "Md",
       "tagline":"Material design"
-    },
-    {
+    },{
       "name":"google-web-components",
       "title":"Google Web Components",
       "color":"#64B5F6",
       "symbol":"Go",
       "tagline":"Google's APIs and services"
-    },
-    {
+    },{
       "name":"gold-elements",
       "color":"#ffb74d",
       "title":"Gold",
       "symbol": "Au",
       "tagline":"Ecommerce"
-    },
-    {
+    },{
       "name":"neon-elements",
       "title":"Neon",
       "color":"#a7ffeb",
       "symbol":"Ne",
       "tagline": "Animation and Special Effects"
-    },
-    {
+    },{
       "name":"platinum-elements",
       "title":"Platinum",
       "color":"#cfd8dc",
       "symbol":"Pt",
       "tagline":"Offline, push, and more"
-    },
-    {
+    },{
       "name":"molecules",
       "title":"Molecules",
       "color":"#ffab91",
       "symbol":"Mo",
       "tagline": "Wrappers for third-party libraries"
-    },
-    {
+    },{
       "name":"utilities",
       "title":"Utilities",
       "color":"#7D26CD",
       "symbol":"Ut",
       "tagline": "Utilities"
+    },{
+      "name":"development",
+      "title":"Development",
+      "color":"#354e87",
+      "symbol":"</>",
+      "tagline": "Not ready "
     }
   ]
 }
