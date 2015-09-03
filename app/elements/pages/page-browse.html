@@ -34,7 +34,7 @@
           </paper-toolbar>
           <div id="search" class="layout horizontal center">
             <iron-icon icon="search"></iron-icon>
-            <input id="query" type="search" autocomplete="off" value="{{q::keyup}}" placeholder="Search Elements" class="flex">
+            <input id="query" type="search" autocomplete="off" value="{{q::keyup}}" placeholder="Search Elements" class="flex" on-search="onSearch">
           </div>
           <div class="content">
             <div id="package-tag" hidden$="[[!tag]]">
@@ -327,7 +327,12 @@
       },
       _isEqual: function(a,b) {
         return a === b;
-      }
+      },
+      onSearch: function(e) {
+        // when a user clicks on the (x) button we need to be sure to
+        // clear the query
+        this.q = this.$.query.value;
+      },
     });
   })();
 </script>
