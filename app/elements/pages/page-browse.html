@@ -146,7 +146,8 @@
       },
       observers: [
         'updateURL(q,package,tag,view,elements)',
-        'updateMeta(packageInfo)'
+        'updateMeta(packageInfo)',
+        'scrollToTop(package)'
       ],
       listeners: {
         'update-params': '_handleParamsUpdate'
@@ -295,6 +296,9 @@
       },
       _stampTable: function(view, skip) {
         return !skip && view === 'table';
+      },
+      scrollToTop: function() {
+        this.$.container.scrollTop = 0;
       },
       closeDrawer: function() {
         this.$.drawerPanel.closeDrawer();
