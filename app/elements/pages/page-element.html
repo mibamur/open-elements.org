@@ -7,7 +7,6 @@
 <link rel="import" href="../../bower_components/iron-component-page/iron-component-page.html">
 <link rel="import" href="../../bower_components/paper-menu/paper-menu.html">
 <link rel="import" href="../../bower_components/paper-item/paper-item.html">
-<link rel="import" href="../../bower_components/qr-code/qr-code.html">
 
 <link rel="import" href="../catalog-data/catalog-data.html">
 <link rel="import" href="../catalog-element/catalog-element.html">
@@ -52,7 +51,6 @@
                 <div class="layout horizontal">
                   <a is="app-link" class="item" href="[[_demoLink(active,item.path)]]" active$="[[_demoActive(item.path,view)]]"><iron-icon icon="visibility"></iron-icon> <span>[[_demoName(item.desc)]]</span></a>
                   <edit-in-jsbin style="padding-top:7px" url="[[_demoUrl(item.path)]]"></edit-in-jsbin>
-                  <qr-code href="[[_demoUrl(item.path)]]"></qr-code>
                 </div>
               </template>
               <a rel="external" class="item" href="[[_githubLink(metadata.source)]]" target="_blank" title="View Source on GitHub" aria-label="View Source on GitHub"><iron-icon icon="code"></iron-icon> <span>Source</span></a>
