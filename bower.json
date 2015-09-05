@@ -26,6 +26,7 @@
     "molecules": "marcus7777/molecules#master",
     "utilities": "marcus7777/utilities#master",
     "development":"marcus7777/development#master",
+    "edit-in-jsbin":"marcus7777/edit-in-jsbin#master",
     "polymer": "Polymer/polymer#^1.1.0",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
