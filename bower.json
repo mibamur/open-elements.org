@@ -19,10 +19,13 @@
   "dependencies": {
     "iron-elements": "marcus7777/iron-elements#master",
     "paper-elements": "marcus7777/paper-elements-1#master",
+    "iron-elements": "PolymerElements/iron-elements#master",
+    "paper-elements": "PolymerElements/paper-elements-1#master",
     "gold-elements": "PolymerElements/gold-elements#master",
     "neon-elements": "PolymerElements/neon-elements#master",
     "platinum-elements": "PolymerElements/platinum-elements#master",
     "google-web-components": "marcus7777/google-web-components#master",
+    "google-web-components": "PolymerElements/google-web-components#master",
     "molecules": "marcus7777/molecules#master",
     "utilities": "marcus7777/utilities#master",
     "development":"marcus7777/development#master",
