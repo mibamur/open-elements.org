@@ -17,25 +17,25 @@
   ],
   "private": true,
   "dependencies": {
-    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
-    "paper-elements": "PolymerElements/paper-elements#^1.0.0",
-    "gold-elements": "PolymerElements/gold-elements#^1.0.0",
-    "neon-elements": "PolymerElements/neon-elements#^1.0.0",
-    "platinum-elements": "PolymerElements/platinum-elements#^1.0.0",
-    "google-web-components": "GoogleWebComponents/google-web-components#^1.0.0",
+    "iron-elements": "marcus7777/iron-elements#master",
+    "paper-elements": "marcus7777/paper-elements-1#master",
+    "gold-elements": "PolymerElements/gold-elements#master",
+    "neon-elements": "PolymerElements/neon-elements#master",
+    "platinum-elements": "PolymerElements/platinum-elements#master",
+    "google-web-components": "marcus7777/google-web-components#master",
     "molecules": "marcus7777/molecules#master",
     "utilities": "marcus7777/utilities#master",
     "development":"marcus7777/development#master",
-    "edit-in-jsbin":"marcus7777/edit-in-jsbin#master",
-    "polymer": "Polymer/polymer#^1.1.0",
+    "polymer": "Polymer/polymer#master",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
     "color": "~2.5.0",
     "hydrolysis": "PolymerLabs/hydrolysis#^1.11.0",
-    "iron-behaviors":"PolymerElements/iron-behaviors"
+    "iron-behaviors":"PolymerElements/iron-behaviors",
+    "edit-in-jsbin":"marcus7777/edit-in-jsbin"
   },
   "resolutions": {
-    "iron-ajax": "^1.0.0",
-    "polymer": "^1.0.0"
+    "iron-ajax": "master",
+    "polymer": "master"
   }
 }
