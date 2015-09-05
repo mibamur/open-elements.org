@@ -167,7 +167,7 @@
       if (this.behaviorMap[detail]) {
         this.router.go("/elements/" + this.behaviorMap[detail] + "?active=" + detail);
       } else {
-        this.fire('toast', {text: "No documentation available for " + detail});
+        this.fire('toast', {text: "No documentation available for " + detail + " open a issues https://github.com/"+ this.metadata.source +"/issues"});
       }
     },
     docSrc: function(element) {
