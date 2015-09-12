@@ -25,17 +25,18 @@
     "google-web-components": "marcus7777/google-web-components#master",
     "molecules": "marcus7777/molecules#master",
     "utilities": "marcus7777/utilities#master",
-    "development":"marcus7777/development#master",
+    "development": "marcus7777/development#master",
     "polymer": "Polymer/polymer#master",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",
     "color": "~2.5.0",
     "hydrolysis": "PolymerLabs/hydrolysis#^1.11.0",
-    "iron-behaviors":"PolymerElements/iron-behaviors",
-    "edit-in-jsbin":"marcus7777/edit-in-jsbin"
+    "iron-behaviors": "PolymerElements/iron-behaviors",
+    "edit-in-jsbin": "marcus7777/edit-in-jsbin"
   },
   "resolutions": {
-    "iron-ajax": "master",
-    "polymer": "master"
+    "iron-ajax": "~1.0.3",
+    "polymer": "master",
+    "geo-hash-data": "master"
   }
 }
