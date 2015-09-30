@@ -40,7 +40,7 @@
       <edit-in-jsbin url="[[demoLink(_element)]]"></edit-in-jsbin>
     </template> -->
     <template is="dom-if" if="{{_testLink(element,_listOfTests)}}" >
-      <a rel="external" class="item" href="{{_testLink(element,_listOfTests)}}" target="_blank" title="Run tests" aria-label="Run tests"><iron-icon icon="content-paste"></iron-icon> <span>Test</span></a>
+      <a rel="external" class="item" href="{{_testLink(element,_listOfTests)}}" target="_blank" title="Run tests" aria-label="Run tests"><iron-icon icon="content-paste"></iron-icon></a>
     </template>
     <iron-ajax auto url="http://open-elements.org/list-of-tests" handle-as="text" last-response="{{_listOfTests}}"></iron-ajax>
 
