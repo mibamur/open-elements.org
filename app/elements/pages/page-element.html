@@ -211,9 +211,9 @@
       return 'https://github.com/' + source;
     },
     _testLink: function(element, listOfTests) {
-      var toTest = "/bower_components/" + element + "/test/";
+      var toTest = "bower_components/" + element + "/test/";
       if (listOfTests.indexOf(toTest) !== -1) {
-        return window.location.origin + toTest;
+        return window.location.origin + "/" + toTest;
       } else {
         return false;
       }
