@@ -55,7 +55,10 @@
                 </div>
               </template>
               <a rel="external" class="item" href="[[_githubLink(metadata.source)]]" target="_blank" title="View Source on GitHub" aria-label="View Source on GitHub"><iron-icon icon="code"></iron-icon> <span>Source</span></a>
-              <a rel="external" class="item" href="[[_testLink(element,_listOfTests)]]" target="_blank" title="Run tests" aria-label="Run tests"><iron-icon icon="content-paste"></iron-icon> <span>Test</span></a>
+              <template is="dom-if" if="{{_testLink(element,_listOfTests)}}" >
+                <a rel="external" class="item" href="{{_testLink(element,_listOfTests)}}" target="_blank" title="Run tests" aria-label="Run tests"><iron-icon icon="content-paste"></iron-icon> <span>Test</span></a>
+              </template>
+              <iron-ajax auto url="http://open-elements.org/list-of-tests" handle-as="text" last-response="{{_listOfTests}}"></iron-ajax>
             </nav>
 
             <div class="nav" id="cart-add">
@@ -101,7 +104,6 @@
         </section>
       </paper-drawer-panel>
     </theme-color>
-    <iron-ajax auto url="http://open-elements.org/list-of-tests" handle-as="text" last-response="{{_listOfTests}}"></iron-ajax>
   </template>
 </dom-module>
 
@@ -212,6 +214,8 @@
       var toTest = "/bower_components/" + element + "/test/";
       if (listOfTests.indexOf(toTest) !== -1) {
         return window.location.origin + toTest;
+      } else {
+        return false;
       }
     },
     _demoUrl: function(url) {
