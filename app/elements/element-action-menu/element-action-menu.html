@@ -39,6 +39,11 @@
     <!-- <template is="dom-if" if="[[_element.demo]]">
       <edit-in-jsbin url="[[demoLink(_element)]]"></edit-in-jsbin>
     </template> -->
+    <template is="dom-if" if="{{_testLink(element,_listOfTests)}}" >
+      <a rel="external" class="item" href="{{_testLink(element,_listOfTests)}}" target="_blank" title="Run tests" aria-label="Run tests"><iron-icon icon="content-paste"></iron-icon> <span>Test</span></a>
+    </template>
+    <iron-ajax auto url="http://open-elements.org/list-of-tests" handle-as="text" last-response="{{_listOfTests}}"></iron-ajax>
+
   </template>
 </dom-module>
 
@@ -55,6 +60,14 @@ Polymer({
   },
   demoLink: function(url) {
     return window.location.origin + "/bower_components/" + url.active + "/"  + url.demo.path;
+  },
+  _testLink: function(element, listOfTests) {
+    var toTest = "bower_components/" + element + "/test/";
+    if (listOfTests.indexOf(toTest) !== -1) {
+      return window.location.origin + "/" + toTest;
+    } else {
+      return false;
+    }
   },
   cartAdd: function(e) {
     e.stopPropagation();
