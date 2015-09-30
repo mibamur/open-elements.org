@@ -5,6 +5,7 @@
 <link rel="import" href="../../bower_components/paper-header-panel/paper-header-panel.html">
 <link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
 <link rel="import" href="../../bower_components/iron-component-page/iron-component-page.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../../bower_components/paper-menu/paper-menu.html">
 <link rel="import" href="../../bower_components/paper-item/paper-item.html">
 
@@ -54,7 +55,7 @@
                 </div>
               </template>
               <a rel="external" class="item" href="[[_githubLink(metadata.source)]]" target="_blank" title="View Source on GitHub" aria-label="View Source on GitHub"><iron-icon icon="code"></iron-icon> <span>Source</span></a>
-              <a rel="external" class="item" href="[[_testLink(element)]]" target="_blank" title="Run tests" aria-label="Run tests"><iron-icon icon="content-paste"></iron-icon> <span>Test</span></a>
+              <a rel="external" class="item" href="[[_testLink(element,_listOfTests)]]" target="_blank" title="Run tests" aria-label="Run tests"><iron-icon icon="content-paste"></iron-icon> <span>Test</span></a>
             </nav>
 
             <div class="nav" id="cart-add">
@@ -207,8 +208,11 @@
     _githubLink: function(source) {
       return 'https://github.com/' + source;
     },
-    _testLink: function(element) {
-      return window.location.origin + "/bower_components/" + element + "/test/";
+    _testLink: function(element, listOfTests) {
+      var toTest = "/bower_components/" + element + "/test/";
+      if (listOfTests.indexOf(toTest) !== -1) {
+        return window.location.origin + toTest;
+      }
     },
     _demoUrl: function(url) {
       return window.location.origin + "/bower_components/" + this.element + "/"  + url;
